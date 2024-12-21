@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Playwrite+DE+Grund+Guides&family=Playwrite+HR+Lijeva:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url(ownimg/cssimgbg.png) no-repeat;
+    background-size: cover;
+    font-family: "Caveat", cursive;
+}
+/* main top part */
+.box{
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: end; 
+    background: #000000a8;
+    color: white;
+    transition-duration: 1s;
+}
+.box h1{
+    margin-right: 750px;
+    font-size: xx-large;
+    color:crimson;
+}
+.box a{
+    margin-right: 50px;
+    font-size: large;
+    color: white;
+    text-decoration: none;
+    transition-duration: 1s;
+    padding-top: 15px;
+    padding-bottom: 14px;
+}
+.box :hover{
+   background-color: black;
+}
+/* top of webpage is end*/
+.box1{
+    height: 80px;
+    color: crimson;
+    font-size: 200%;
+    text-align: center;
+}
+span{
+    color: white;
+}
+ /* What is css part is end*/
+.box2{
+    height: 50px;
+    display: flex;
+    justify-content: stretch;
+    justify-content: center;
+    font-size: x-large;
+}
+#box{
+    height: 49px;
+    width: 70px;
+    border: 1px solid black;
+    background-color: white;
+}
+/* search bar part is end */
+.bg{
+    margin-top: 20px;
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.img1{
+    height: 300px;
+    width: 300px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background: url(ownimg/css-bg.jpg) no-repeat;
+    background-size: cover; 
+    animation: img1 3s linear infinite
+}
+.img2{
+    height: 300px;
+    width: 300px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background: url(ownimg/css-bg1.png) no-repeat;
+    background-size: cover;
+    animation: Shake 1s linear infinite
+}
+.img3{
+    height: 300px;
+    width: 300px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background: url(ownimg/css-bg2.jpg) no-repeat;
+    background-size: cover;
+    animation: cir 3s linear infinite
+}
+
+/*Using keyframes for shaking an img 2*/
+@keyframes Shake {
+    0% {
+        transform: rotate(5deg);
+    }
+
+    25% {
+        transform: rotate(-6deg);
+    }
+
+    50% {
+        transform: rotate(5deg);
+    }
+
+    75% {
+        transform: rotate(-6deg);
+    }
+
+    100% {
+        transform: rotate(5deg);
+    }
+}
+/*Using keyframes for -360 rotate an img 3*/
+@keyframes cir {
+    0% {
+        transform: rotate(-72deg);
+    }
+
+    25% {
+        transform: rotate(-144deg);
+    }
+
+    50% {
+        transform: rotate(-216deg);
+    }
+
+    75% {
+        transform: rotate(-288deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+/*Using keyframes for 360 rotate an img 1*/
+@keyframes img1 {
+    0% {
+        transform: rotate(72deg);
+    }
+
+    25% {
+        transform: rotate(144deg);
+    }
+
+    50% {
+        transform: rotate(216deg);
+    }
+
+    75% {
+        transform: rotate(288deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.info{
+     color: white;
+     text-align: center;
+     margin-top: 20px;
+}
+h1{
+    line-height: 30px;
+    font-size: 50px;
+}
+h2{
+    line-height: 40px;
+}
+p{
+    line-height: 30px;
+}
